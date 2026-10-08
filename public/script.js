@@ -1,4 +1,4 @@
-   const CLIENT_ID = "1045032219556-65b51meblui5h7fgmshro38cgehm2pn6.apps.googleusercontent.com"; 
+const CLIENT_ID = "1045032219556-65b51meblui5h7fgmshro38cgehm2pn6.apps.googleusercontent.com";
 
 const form = document.getElementById("formulario");
 const campoNumero = document.getElementById("numero");
@@ -48,17 +48,13 @@ form.addEventListener("submit", async (e) => {
   mensagem.textContent = "";
 
   const numero = Number(campoNumero.value);
-  if (!idToken) {
-    erro("Entre com sua conta Google antes de gerar o desenho.");
-    return;
-  }
 
   try {
     const resp = await fetch("/api/desenho", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + idToken,
+        Authorization: "Bearer " + (idToken || ""),
       },
       body: JSON.stringify({ numero }),
     });
