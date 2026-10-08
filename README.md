@@ -22,6 +22,6 @@ Framework preset: `None`. Build command: vazio. Build output directory: `public`
 
 ## Identificação (preencha após o fork)
 
-Nome: 
-RA: 
-URL: https://
+Nome: Kauã Fernando Fuckner 
+RA: 2026108321
+URL: https://desenho-animado.pages.dev
