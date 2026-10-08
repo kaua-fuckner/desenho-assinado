@@ -24,4 +24,4 @@ Framework preset: `None`. Build command: vazio. Build output directory: `public`
 
 Nome: Kauã Fernando Fuckner 
 RA: 2026108321
-URL: https://desenho-animado.pages.dev
+URL: https://desenho-assinado-1h3.pages.dev
